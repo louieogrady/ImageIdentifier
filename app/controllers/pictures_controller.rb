@@ -9,9 +9,13 @@ class PicturesController < ApplicationController
     @pictureuser = @picture.user.name
     @response = Cloudinary::Uploader.upload("#{@picture.attachment}",
       :categorization => "aws_rek_tagging",
-      :auto_tagging => 0.9)
+      :auto_tagging => 0.9,
+      :detection => "aws_rek_face")
     @tags = @response["tags"]
+    # @facialresponse = Cloudinary::Uploader.upload("#{Picture.find_by_id(15).attachment}", :detection => "adv_face")
+    # @facialhash = @facialresponse["info"]["detection"]["adv_face"]["data"].first["attributes"]
   end
+
 
   def new
     @picture = Picture.new
