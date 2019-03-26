@@ -1,0 +1,12 @@
+<h1> Add New Comment </h1>
+
+<%= form_for (@comment) do |f| %>
+
+<%= f.label :content%>
+<p> <%= f.text_field :content %> </p>
+<br>
+<%= f.submit "Submit Comment" %>
+<% end %>
+<br>
+<p> <%= link_to "User Index", users_path %> </p>
+<p> <%= link_to "Picture Index", pictures_path %> </p>

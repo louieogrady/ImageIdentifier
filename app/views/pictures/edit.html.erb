@@ -1,0 +1,15 @@
+<h1> Edit or Delete Picture </h1>
+
+<%= form_for (@picture) do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %> <br>
+
+<%= f.label :attachment %>
+<%= f.text_field :attachment %> <br>
+
+<%= f.submit %>
+<% end %>
+
+<%= button_to "Delete Car", {:controller => :pictures,
+      :action => 'destroy', :id => @picture.id }, :method => :delete %>

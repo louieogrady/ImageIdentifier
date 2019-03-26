@@ -1,0 +1,20 @@
+<h1> Show Picture </h1>
+
+<p> Picture Name : <%= @picture.name %> </p>
+<p> User : <%= @pictureuser %> </p>
+<p> Picture : <br> <%= image_tag "#{@picture.attachment}", size: "500" %> </p>
+
+<h1> Tags : <%= @tags %> </h1>
+
+<h1>Comments: <% @picture.comments.each do |c| %></h1>
+<ul>
+  <li><%= c.content %> <%= link_to 'Edit or Delete Comment', edit_comment_path(c) %></li>
+</ul>
+<% end %>
+
+<h1><%= link_to 'Make a Comment', new_comment_path %></h1>
+
+
+<p> <%= link_to 'Edit or Delete Picture', edit_picture_path %> </p>
+<p> <%= link_to "Picture Index", pictures_path %> </p>
+<p> <%= link_to "User Index", users_path %> </p>
