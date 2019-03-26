@@ -1,2 +1,12 @@
-<h1>Comments#edit</h1>
-<p>Find me in app/views/comments/edit.html.erb</p>
+<h1> Edit or Delete Picture </h1>
+
+<%= form_for (@comment) do |f| %>
+
+<%= f.label :content %>
+<%= f.text_field :content %> <br>
+
+<%= f.submit %>
+<% end %>
+
+<%= button_to "Delete Comment", {:controller => :comments,
+      :action => 'destroy', :id => @comment.id }, :method => :delete %>

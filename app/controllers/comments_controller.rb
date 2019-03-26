@@ -18,10 +18,11 @@ class CommentsController < ApplicationController
   end
 
   def create
+    session[:return_to] = request.referer
     @comment = Comment.new
     @comment.picture = Picture.first
     @comment.update(comment_params)
-    redirect_to pictures_path
+    redirect_to session[:return_to]
   end
 
   def update
@@ -31,10 +32,10 @@ class CommentsController < ApplicationController
     redirect_to pictures_path
   end
 
-  def delete
+  def destroy
     @comment = Comment.find(params[:id])
     @comment.destroy
-    redirect_to comments_path
+    redirect_to root_path
   end
 
 private
