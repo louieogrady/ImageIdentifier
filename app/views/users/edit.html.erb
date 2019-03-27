@@ -1,15 +1,15 @@
-<h1> WELCOME TO QUE ES ESO!!</h1>
+<h1> Edit User </h1>
 
-<h2> For Fun or Visually Impaired </h2>
-
-<h2>Signup</h2>
-
-<%= form_for @user, :url => '/signup' do |f| %>
+<%= form_for (user_path) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
+<br>
   <%= f.label :email %>
   <%= f.text_field :email %>
+<br>
   <%= f.label :password %>
   <%= f.password_field :password %>
-  <%= f.submit %>
+<br>
+  <%= f.submit "Save Edit"%>
 <% end  %>
+<br>

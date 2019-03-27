@@ -2,10 +2,10 @@
 
 <p> <%= @user.name %> </p>
 <p> <% @userpictures.each do |userpicture| %> </p>
-<p> <%= link_to userpicture.name, picture_path(userpicture) %> </p>
+<p> <%= link_to userpicture.name, user_picture_path(userpicture) %> </p>
 <p> <%= image_tag "#{userpicture.attachment}", size: "100" %> </p>
     <% end %>
 
-
+<p> <%= link_to 'Edit or Delete User', edit_user_path %> </p>
 <p> <%= link_to "User Index", users_path %> </p>
-<p> <%= link_to "Picture Index", pictures_path %> </p>
+<p> <%= link_to "Picture Index", user_pictures_path(Picture.all) %> </p>

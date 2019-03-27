@@ -2,6 +2,7 @@
 
 <% @pictures.each do |picture| %>
 <p> <%= link_to picture.name, user_picture_path(@user, picture) %> </p>
+<p> <%= image_tag "#{picture.attachment}" %> </p>
 <% end %>
 <br>
 <p> <%= link_to "Upload New Picture", new_user_picture_path %> </p>

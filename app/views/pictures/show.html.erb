@@ -1,10 +1,10 @@
 <h1> Show Picture </h1>
 
 <p> Picture Name : <%= @picture.name %> </p>
-<p> User : <%= @pictureuser %> </p>
+<p> User : <%= "#{current_user.name}" %> </p>
 <p> Picture : <br> <%= image_tag "#{@picture.attachment}", size: "500" %> </p>
 
-<h3> Tags : <%= @tags %> </h3>
+<h3> Recognition : <%= @tags %> </h3>
 
 <h2>Comments: <% @picture.comments.each do |c| %></h2>
 <ul>
