@@ -2,6 +2,7 @@ class PicturesController < ApplicationController
     before_action :require_login, only: [:new, :create, :edit, :destroy]
 
   def index
+    @user = User.find(params[:user_id])
     @pictures = Picture.all
   end
 
@@ -15,10 +16,12 @@ class PicturesController < ApplicationController
     @tags = @response["tags"]
     # @facialresponse = Cloudinary::Uploader.upload("#{Picture.find_by_id(15).attachment}", :detection => "adv_face")
     # @facialhash = @facialresponse["info"]["detection"]["adv_face"]["data"].first["attributes"]
+    @comment = Comment.new
   end
 
 
   def new
+    @user = User.find(params[:user_id])
     @picture = Picture.new
   end
 
@@ -29,22 +32,25 @@ class PicturesController < ApplicationController
   def update
     @picture = Picture.new
     @picture.update(picture_params)
-    redirect_to picture_path(@picture)
+    redirect_to user_picture_path(@picture)
   end
 
   def create
+    # raise
     @picture = Picture.new(picture_params)
-      if @picture.save
-         redirect_to picture_path(@picture)
+    @picture.user_id = current_user.id
+      if @picture.valid?
+        @picture.save
+         redirect_to user_picture_path(@picture.user, @picture)
       else
-         redirect_to new_picture_path
+         redirect_to new_user_picture_path
       end
   end
 
   def destroy
      @picture = Picture.find(params[:id])
      @picture.destroy
-     redirect_to pictures_path
+     redirect_to user_pictures_path
   end
 
 private

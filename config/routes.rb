@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :users
-  resources :pictures
+  resources :users do
+    resources :pictures
+  end
   resources :comments
 
   # user account management

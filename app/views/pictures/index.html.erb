@@ -1,9 +1,9 @@
 <h1> Pictures Index </h1>
 
 <% @pictures.each do |picture| %>
-<p> <%= link_to picture.name, picture_path(picture) %> </p>
+<p> <%= link_to picture.name, user_picture_path(@user, picture) %> </p>
 <% end %>
 <br>
-<p> <%= link_to "Upload New Picture", new_picture_path %> </p>
+<p> <%= link_to "Upload New Picture", new_user_picture_path %> </p>
 <br>
 <p> <%= link_to "User Index", users_path %> </p>

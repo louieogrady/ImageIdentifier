@@ -12,8 +12,18 @@
 </ul>
 <% end %>
 
+<h1> Add New Comment </h1>
+
+<p> <%= form_for (@comment) do |f| %> </p>
+
+<%= f.label :content%>
+<p> <%= f.text_field :content %> </p>
+<br>
+<%= f.submit "Submit Comment" %>
+<% end %>
+
 <h2><%= link_to 'Make a Comment', new_comment_path %></h2>
 
-<p> <%= link_to 'Edit or Delete Picture', edit_picture_path %> </p>
-<p> <%= link_to "Picture Index", pictures_path %> </p>
+<p> <%= link_to 'Edit or Delete Picture', edit_user_picture_path %> </p>
+<p> <%= link_to "Picture Index", user_pictures_path %> </p>
 <p> <%= link_to "User Index", users_path %> </p>
