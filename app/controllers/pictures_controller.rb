@@ -1,4 +1,5 @@
 class PicturesController < ApplicationController
+    before_action :require_login, only: [:new, :create, :edit, :destroy]
 
   def index
     @pictures = Picture.all
@@ -27,14 +28,12 @@ class PicturesController < ApplicationController
 
   def update
     @picture = Picture.new
-    @picture.user = User.first
     @picture.update(picture_params)
     redirect_to picture_path(@picture)
   end
 
   def create
     @picture = Picture.new(picture_params)
-    @picture.user = User.first
       if @picture.save
          redirect_to picture_path(@picture)
       else
@@ -51,6 +50,10 @@ class PicturesController < ApplicationController
 private
   def picture_params
     params.require(:picture).permit(:name, :attachment, :user_id)
+  end
+
+  def require_login
+    authorized?
   end
 
 end
