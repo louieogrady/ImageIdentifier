@@ -14,4 +14,7 @@ Rails.application.routes.draw do
   post '/sessions', to: 'sessions#create', as: 'sessions'
   get '/logout', to: 'sessions#destroy', as: 'logout'
 
+  # homepage
+  root to: 'sessions#new'
+
 end

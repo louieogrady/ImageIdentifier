@@ -8,6 +8,9 @@
 <%= f.label :attachment %>
 <p> <%= f.file_field :attachment %> </p>
 <br>
+<%= f.label "Select Own User ID" %>
+<p> <%= f.collection_select :user_id, User.all, :id, :name %> </p>
+<br>
 <%= f.submit "Upload Image" %>
 <% end %>
 <br>
