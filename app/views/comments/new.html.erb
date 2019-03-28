@@ -1,6 +1,6 @@
 <h1> Add New Comment </h1>
 
-<p> <%= form_for (@comment) do |f| %> </p>
+<p> <%= form_for [@user, @comment] do |f| %> </p>
 
 <%= f.label :content%>
 <p> <%= f.text_field :content %> </p>
@@ -9,4 +9,4 @@
 <% end %>
 <br>
 <p> <%= link_to "User Index", users_path %> </p>
-<p> <%= link_to "Picture Index", pictures_path %> </p>
+<p> <%= link_to "Picture Index", user_pictures_path %> </p>

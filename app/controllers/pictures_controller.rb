@@ -11,10 +11,10 @@ class PicturesController < ApplicationController
 
     @picture = Picture.find(params[:id])
 
-    @response = Cloudinary::Uploader.upload("#{@picture.attachment}",
-      :categorization => "imagga_tagging",
-      :auto_tagging => 0.3)
-    @tags = @response["tags"]
+    # @response = Cloudinary::Uploader.upload("#{@picture.attachment}",
+    #   :categorization => "imagga_tagging",
+    #   :auto_tagging => 0.3)
+    # @tags = @response["tags"]
   end
 
   def new

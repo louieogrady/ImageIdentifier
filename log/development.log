@@ -14411,3 +14411,331 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/pictures" for ::1 at 2019-03-28 10:42:29 +0000
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/pictures"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/signup" for ::1 at 2019-03-28 10:42:37 +0000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 481ms (Views: 418.0ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/signup" for ::1 at 2019-03-28 10:42:55 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7zlP1uf3KrjOYP0KvpeS1h104hdNRZiQdulJmj988+l1zGvrUf8YegHmZXtvNzqqYJr/5nk3tYCXVu/BS1zLQQ==", "user"=>{"name"=>"Blue", "email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "email@email.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 85ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/signup" for ::1 at 2019-03-28 10:42:55 +0000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-03-28 10:43:02 +0000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 59ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-03-28 10:43:11 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88p2rfE9rMSGrdKzI1thIXopMYd893IYhN8hx6IxJB8RaARajp8VkyDcc/1yFjsR2DfgplPHu8G3fk0Lc9BtbQ==", "name"=>"Blue", "password"=>"[FILTERED]", "commit"=>"login"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Blue"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2019-03-28 10:43:11 +0000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-03-28 10:43:18 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xgYQNmS7HjkqJYHV8yiBa+thLX95WW0vqcYRSGsrbnRc8zQL0rMs++WjGaQiiCkXlo8wjk0rQD9IebcTHwtW3A==", "name"=>"Daniel", "password"=>"[FILTERED]", "commit"=>"login"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Daniel"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2019-03-28 10:43:19 +0000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-03-28 10:43:23 +0000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 58ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-03-28 10:43:36 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9XqHUjJKb6m/BzSvO3GL+gvRSmRXEQyYg1nuzYOGl0MHdeV54qLrcLRpR/ozVPXtJQvnLZ6ZnYb/16Zi+rTa8Q==", "user"=>{"name"=>"Fred", "email"=>"fred@email.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fred@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fred@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "email") VALUES (?, ?, ?)[0m  [["name", "Fred"], ["password_digest", "$2a$10$be9bsxDNR5dMnSISus0bR.XZRXs35rE66FlRiYOvgjSCipzM7t.Ai"], ["email", "fred@email.com"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/36
+Completed 302 Found in 88ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/users/36" for ::1 at 2019-03-28 10:43:37 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 36]]
+  Rendered users/show.html.erb within layouts/application (10.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+Completed 200 OK in 173ms (Views: 41.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for ::1 at 2019-03-28 10:43:42 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 55.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/%23%3CPicture::ActiveRecord_Relation:0x00007fcea780a688%3E/pictures" for ::1 at 2019-03-28 10:43:44 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"#<Picture::ActiveRecord_Relation:0x00007fcea780a688>"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (35.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 67.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/22/pictures/1" for ::1 at 2019-03-28 10:44:00 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.6ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 901ms (ActiveRecord: 1.8ms)
+
+
+  
+CloudinaryException (Server returned unexpected status code - 420 - {"error":{"message":"Rate Limit Exceeded. Limit of 50 Imagga Auto Tagging operations reached. Try again on Thu, 25 Apr 2019 00:00:00 GMT"}}):
+  
+app/controllers/pictures_controller.rb:14:in `show'
+Started GET "/users/22/pictures/1" for ::1 at 2019-03-28 10:44:15 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 1]]
+  Rendered pictures/show.html.erb within layouts/application (26.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+Completed 200 OK in 118ms (Views: 58.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/comments/12/edit" for ::1 at 2019-03-28 10:44:21 +0000
+Processing by CommentsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering comments/edit.html.erb within layouts/application
+  Rendered comments/edit.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+Completed 200 OK in 86ms (Views: 75.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/comments/12" for ::1 at 2019-03-28 10:44:25 +0000
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H6+h9OtrEFkBBvxmMJ5vLuMfOQLQXT4XK0WjQai5imHIAQMg1Vs3nDuR2mzwyiCkKJK+V4MXwdVGQOgYsGVBLQ==", "id"=>"12"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 12]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2019-03-28 10:44:25 +0000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-03-28 10:44:58 +0000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 73.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/22/pictures/1" for ::1 at 2019-03-28 10:45:01 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 1]]
+  Rendered pictures/show.html.erb within layouts/application (14.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+Completed 200 OK in 111ms (Views: 57.3ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/comments/11/edit" for ::1 at 2019-03-28 10:45:03 +0000
+Processing by CommentsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering comments/edit.html.erb within layouts/application
+  Rendered comments/edit.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+Completed 200 OK in 85ms (Views: 81.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/comments/11" for ::1 at 2019-03-28 10:45:05 +0000
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"joIGKg+uOBMt/tAO4XKxReNadoWgXQnMEhrrR8QF7JTatblbKhy37r66eYM4sRUh9fixiMOtxBwGR2UBkqrweg==", "id"=>"11"}
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 11]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/comments/new
+Completed 302 Found in 9ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/comments/new" for ::1 at 2019-03-28 10:45:05 +0000
+Processing by CommentsController#new as HTML
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/new.html.erb within layouts/application (293.2ms)
+Completed 500 Internal Server Error in 301ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pictures_path' for #<#<Class:0x00007fcea3fa4fa0>:0x00007fcea361a638>):
+     9: <% end %>
+    10: <br>
+    11: <p> <%= link_to "User Index", users_path %> </p>
+    12: <p> <%= link_to "Picture Index", pictures_path %> </p>
+  
+app/views/comments/new.html.erb:12:in `_app_views_comments_new_html_erb__990911053167860372_70262740539260'
+Started GET "/comments/new" for ::1 at 2019-03-28 10:45:42 +0000
+Processing by CommentsController#new as HTML
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/new.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"pictures"}, missing required keys: [:user_id]):
+     9: <% end %>
+    10: <br>
+    11: <p> <%= link_to "User Index", users_path %> </p>
+    12: <p> <%= link_to "Picture Index", user_pictures_path %> </p>
+  
+app/views/comments/new.html.erb:12:in `_app_views_comments_new_html_erb__990911053167860372_70262759021940'
+Started GET "/comments/new" for ::1 at 2019-03-28 10:46:24 +0000
+Processing by CommentsController#new as HTML
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/new.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"pictures"}, missing required keys: [:user_id]):
+     9: <% end %>
+    10: <br>
+    11: <p> <%= link_to "User Index", users_path %> </p>
+    12: <p> <%= link_to "Picture Index", user_pictures_path %> </p>
+  
+app/views/comments/new.html.erb:12:in `_app_views_comments_new_html_erb__990911053167860372_70262731538700'
+Started GET "/comments/new" for ::1 at 2019-03-28 10:47:10 +0000
+Processing by CommentsController#new as HTML
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/new.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"pictures"}, missing required keys: [:user_id]):
+     9: <% end %>
+    10: <br>
+    11: <p> <%= link_to "User Index", users_path %> </p>
+    12: <p> <%= link_to "Picture Index", user_pictures_path.id %> </p>
+  
+app/views/comments/new.html.erb:12:in `_app_views_comments_new_html_erb__990911053167860372_70262745309300'
+Started GET "/comments/new" for ::1 at 2019-03-28 10:47:46 +0000
+Processing by CommentsController#new as HTML
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/new.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"pictures"}, missing required keys: [:user_id]):
+     9: <% end %>
+    10: <br>
+    11: <p> <%= link_to "User Index", users_path %> </p>
+    12: <p> <%= link_to "Picture Index", user_pictures_path.id %> </p>
+  
+app/views/comments/new.html.erb:12:in `_app_views_comments_new_html_erb__990911053167860372_70262735435800'
+Started GET "/comments/new" for ::1 at 2019-03-28 10:47:51 +0000
+Processing by CommentsController#new as HTML
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"pictures"}, missing required keys: [:user_id]):
+     9: <% end %>
+    10: <br>
+    11: <p> <%= link_to "User Index", users_path %> </p>
+    12: <p> <%= link_to "Picture Index", user_pictures_path %> </p>
+  
+app/views/comments/new.html.erb:12:in `_app_views_comments_new_html_erb__990911053167860372_70262776255280'
