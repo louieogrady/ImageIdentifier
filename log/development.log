@@ -24354,3 +24354,122 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2019-03-28 17:46:56 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/44
+Completed 302 Found in 24ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/44" for ::1 at 2019-03-28 17:46:56 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 44]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (26.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 254ms (Views: 228.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-03-28 17:47:00 +0000
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/44
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/44" for ::1 at 2019-03-28 17:47:00 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 44]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2019-03-28 17:47:04 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/users_controller.rb:8:in `show'
+Started GET "/users/" for ::1 at 2019-03-28 17:47:04 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-03-28 17:47:07 +0000
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/44
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/44" for ::1 at 2019-03-28 17:47:07 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 44]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/44/pictures" for ::1 at 2019-03-28 17:47:11 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"44"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (19.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 58ms (Views: 54.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logout" for ::1 at 2019-03-28 17:47:12 +0000
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-03-28 17:47:12 +0000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-28 17:47:20 +0000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
