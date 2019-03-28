@@ -19,18 +19,20 @@ class PicturesController < ApplicationController
   end
 
   def new
-    @user = User.find_by(params[:id])
+    @user = User.find_by_id(params[:user_id]) # had to specify user_id specifically here, error when given params[:id])
     @picture = Picture.new
   end
 
   def edit
-    @picture = Picture.find(params[:id])
+    @picture = Picture.find_by_id(params[:id])
   end
 
   def update
-    @picture = Picture.new
+    byebug
+    @picture = Picture.find_by_id(params[:id])
     @picture.update(picture_params)
-    redirect_to user_picture_path(@userpicture) # NEEDS TO CHANGE?? - no @userpicture = poss change to @picture.user
+
+    redirect_to user_picture_path(@picture) # NEEDS TO CHANGE?? - no @userpicture = poss change to @picture.user
   end
 
   def create
