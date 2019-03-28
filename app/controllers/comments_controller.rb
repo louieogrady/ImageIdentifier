@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
   def create
     session[:return_to] = request.referer
     @comment = Comment.new
-    byebug
+    #byebug
     #@comment.picture = Picture.first
     @comment.update(comment_params)
     redirect_to session[:return_to]

@@ -22675,3 +22675,1682 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/users/42/edit" for ::1 at 2019-03-28 14:50:01 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 14:50:46 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2019-03-28 14:50:53 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (2.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/42/pictures" for ::1 at 2019-03-28 14:50:55 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"42"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (26.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 50.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 14:50:57 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 14:51:32 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 14:51:34 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 14:52:46 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/42/edit" for ::1 at 2019-03-28 15:20:42 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/users/42/edit"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/42/edit" for ::1 at 2019-03-28 15:22:36 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/users/42/edit"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/42/edit" for ::1 at 2019-03-28 15:23:41 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/users/42/edit"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/42/edit" for ::1 at 2019-03-28 15:28:32 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/users/42/edit"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/42/edit" for ::1 at 2019-03-28 15:28:53 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/users/42/edit"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:29:56 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/42/edit" for ::1 at 2019-03-28 15:30:00 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/users/42/edit"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:30:31 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:30:35 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/42/edit" for ::1 at 2019-03-28 15:31:15 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/users/42/edit"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/42/edit" for ::1 at 2019-03-28 15:32:04 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/users/42/edit"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/42" for ::1 at 2019-03-28 15:33:55 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 42]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 24.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:34:17 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:35:16 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:35:21 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:36:11 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/42" for ::1 at 2019-03-28 15:36:12 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 42]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (4.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 31.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:36:13 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/42/edit" for ::1 at 2019-03-28 15:36:16 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/users/42/edit"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/42/edit" for ::1 at 2019-03-28 15:37:15 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/users/42/edit"):
+  
+actionpack (5.1.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:39:26 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 38ms (Views: 26.0ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/users/42" for ::1 at 2019-03-28 15:39:29 +0000
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d2aCH+Q5hSVu6C1npRrGDfuFZk7JHpJtYXx8VdVi+PR2rE+/uTIKvuPa1gkN1iAwhE03xVtCMBpFLUUGodIdwQ==", "user"=>{"name"=>"manu", "email"=>"manu@manu.com", "password"=>"[FILTERED]"}, "commit"=>"Save Edit", "id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND ("users"."id" != ?) LIMIT ?[0m  [["email", "manu@manu.com"], ["id", 42], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$10$qqHZeuGdyGNiaihdKEg6YusogsKBoMa00Zw5kJ55vYJvLmG6oDdD."], ["id", 42]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/42
+Completed 302 Found in 70ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/42" for ::1 at 2019-03-28 15:39:29 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 42]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 27.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:39:32 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/42" for ::1 at 2019-03-28 15:39:34 +0000
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zU669U8LtxID/iHJSryKtl1lLmspVNxSgbKVFZvnDD3W4sfarTgN0wq0fzUhREl3sm3PfkMvCDMRlzGaLq3hog==", "user"=>{"name"=>"manu", "email"=>"manu@manu.com", "password"=>"[FILTERED]"}, "commit"=>"Save Edit", "id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND ("users"."id" != ?) LIMIT ?[0m  [["email", "manu@manu.com"], ["id", 42], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$10$k39Xwdj3rBmMEp.m/4vUSOr6BuyztSU6fkPjmG4Ys0RFDgkLkWjBy"], ["id", 42]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/42
+Completed 302 Found in 69ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/users/42" for ::1 at 2019-03-28 15:39:34 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 42]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:39:36 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/42" for ::1 at 2019-03-28 15:39:39 +0000
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FYnjPB+ERCx/EK2aXO19YSMnuAYAmDIKxKjgv+QEMoYOJZ4T/bf+7XZa82Y3Fb6gzC9ZE2rj5mtUjUQwUU7fGQ==", "user"=>{"name"=>"manu", "email"=>"manu@manu.com", "password"=>"[FILTERED]"}, "commit"=>"Save Edit", "id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND ("users"."id" != ?) LIMIT ?[0m  [["email", "manu@manu.com"], ["id", 42], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$10$cQnALb8tRPznTIPDJH1YIeE./a.Ie49Nz3HEUuB7Vte5jYyXyp3iu"], ["id", 42]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/42
+Completed 302 Found in 68ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/42" for ::1 at 2019-03-28 15:39:39 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 42]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:39:51 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:39:56 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/42" for ::1 at 2019-03-28 15:39:58 +0000
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oqy+9DJaBIiY+NPFNR2YyZBXP4t1u6rkQjsZbSLovZ65AMPb0Gm+SZGyjTle5VsIf1/enh/AfoXSHr3il6JQAQ==", "user"=>{"name"=>"manu", "email"=>"manu@manu.com", "password"=>"[FILTERED]"}, "commit"=>"Save Edit", "id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND ("users"."id" != ?) LIMIT ?[0m  [["email", "manu@manu.com"], ["id", 42], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$10$i9GnZYwT1tqg23h3dTh3pu3PWh7T1QLXrrSQhpdNjimsv80RPIxk2"], ["id", 42]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/42
+Completed 302 Found in 69ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/users/42" for ::1 at 2019-03-28 15:39:58 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 42]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/42/edit" for ::1 at 2019-03-28 15:40:00 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/42" for ::1 at 2019-03-28 15:40:03 +0000
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jmvPcRfH2YLdDxGmprzv0eHi4MF0axaPfdlTR/J1S5GVx7Je9fRjQ9RFT1rNRCwQDuoB1B4Qwu7t/PfIRz+mDg==", "user"=>{"name"=>"manumanu", "email"=>"manu@manu.com", "password"=>"[FILTERED]"}, "commit"=>"Save Edit", "id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND ("users"."id" != ?) LIMIT ?[0m  [["email", "manu@manu.com"], ["id", 42], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "name" = ? WHERE "users"."id" = ?[0m  [["name", "manumanu"], ["id", 42]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/42
+Completed 302 Found in 8ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/users/42" for ::1 at 2019-03-28 15:40:03 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 42]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-03-28 15:42:42 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/24" for ::1 at 2019-03-28 15:42:43 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 24]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (8.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/24/pictures/5" for ::1 at 2019-03-28 15:42:44 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"24", "id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 5]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (6.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 32.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/24/pictures/5/edit" for ::1 at 2019-03-28 15:45:08 +0000
+Processing by PicturesController#edit as HTML
+  Parameters: {"user_id"=>"24", "id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering pictures/edit.html.erb within layouts/application
+  Rendered pictures/edit.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 50ms (Views: 43.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/24/pictures" for ::1 at 2019-03-28 15:45:23 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"24"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (13.1ms)
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 36.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/22/pictures/12" for ::1 at 2019-03-28 15:45:27 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"12"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 12]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (4.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/22/pictures" for ::1 at 2019-03-28 15:46:08 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (12.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 37.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/22/pictures/9" for ::1 at 2019-03-28 15:46:10 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (7.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/22/pictures/9/edit" for ::1 at 2019-03-28 15:46:19 +0000
+Processing by PicturesController#edit as HTML
+  Parameters: {"user_id"=>"22", "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering pictures/edit.html.erb within layouts/application
+  Rendered pictures/edit.html.erb within layouts/application (2.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/22/pictures" for ::1 at 2019-03-28 16:01:31 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (13.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 51ms (Views: 46.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/22/pictures/5" for ::1 at 2019-03-28 16:01:37 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 5]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (5.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 32.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/22/pictures/5/edit" for ::1 at 2019-03-28 16:01:39 +0000
+Processing by PicturesController#edit as HTML
+  Parameters: {"user_id"=>"22", "id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering pictures/edit.html.erb within layouts/application
+  Rendered pictures/edit.html.erb within layouts/application (3.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 33ms (Views: 28.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-03-28 16:06:58 +0000
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/42
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/42" for ::1 at 2019-03-28 16:06:58 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 42]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 31.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-03-28 16:07:01 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/24" for ::1 at 2019-03-28 16:32:40 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 24]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (9.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/24/pictures/4" for ::1 at 2019-03-28 16:32:42 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"24", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 4]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (6.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 31.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/comments" for ::1 at 2019-03-28 16:32:48 +0000
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IUrsWIU3q2C+GFbKjYpSCeN9a2fOWqESN9ck85o3crDCiVg1ck/9LSpI/PCznH7So+qVwFRLSrYpIlNjYgXOhA==", "comment"=>{"content"=>"what an eiffel", "picture_id"=>"4", "user_id"=>"42"}, "commit"=>"Submit Comment"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("content", "picture_id", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", "what an eiffel"], ["picture_id", 4], ["created_at", "2019-03-28 16:33:13.043395"], ["updated_at", "2019-03-28 16:33:13.043395"], ["user_id", 42]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/24/pictures/4
+Completed 302 Found in 24793ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users/24/pictures/4" for ::1 at 2019-03-28 16:33:13 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"24", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 4]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (17.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 48ms (Views: 44.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/24/pictures" for ::1 at 2019-03-28 16:33:19 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"24"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (17.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 42.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/22/pictures/19" for ::1 at 2019-03-28 16:33:22 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"19"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 19]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (7.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 33.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/comments" for ::1 at 2019-03-28 16:33:30 +0000
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3qhA36R61rDH21Jq4Vcpn9qiOBhyPIBJyYgalz72W6o9a/SyUwKA/VOL+FDfQQVEmjXGv+gta+3XfW0HxsTnng==", "comment"=>{"content"=>"what an ibra", "picture_id"=>"19", "user_id"=>"42"}, "commit"=>"Submit Comment"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("content", "picture_id", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", "what an ibra"], ["picture_id", 19], ["created_at", "2019-03-28 16:33:30.584498"], ["updated_at", "2019-03-28 16:33:30.584498"], ["user_id", 42]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/22/pictures/19
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/users/22/pictures/19" for ::1 at 2019-03-28 16:33:30 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"19"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 19]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (9.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/comments/41/edit" for ::1 at 2019-03-28 16:33:33 +0000
+Processing by CommentsController#edit as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering comments/edit.html.erb within layouts/application
+  Rendered comments/edit.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 38ms (Views: 32.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/comments/41" for ::1 at 2019-03-28 16:33:36 +0000
+Processing by CommentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bCKAlsbo8iDWCXVzuUM2vrM8TB1L4Jplf+woKQnDYSxmhNDUPYPt+2IsNmPi1iTAXbHT4cjjUNlgBP3RmVNNsQ==", "comment"=>{"content"=>"what an ibraaaa"}, "commit"=>"Update Comment", "id"=>"41"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "comments" SET "content" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["content", "what an ibraaaa"], ["updated_at", "2019-03-28 16:33:36.388851"], ["id", 41]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/21/pictures/19
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/21/pictures/19" for ::1 at 2019-03-28 16:33:36 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"21", "id"=>"19"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 19]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (5.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/21/pictures" for ::1 at 2019-03-28 16:33:39 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"21"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (21.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 58.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/22/pictures/17" for ::1 at 2019-03-28 16:42:01 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"17"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 17]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (6.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 39.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/22/pictures/15" for ::1 at 2019-03-28 16:42:34 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"15"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 15]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (6.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/22/pictures/9" for ::1 at 2019-03-28 16:42:51 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (7.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/22/pictures" for ::1 at 2019-03-28 16:43:54 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (14.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 42.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-03-28 16:48:05 +0000
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/42
+Completed 302 Found in 14ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/42" for ::1 at 2019-03-28 16:48:05 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 42]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 29.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-03-28 16:48:06 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/24" for ::1 at 2019-03-28 16:48:07 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 24]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (9.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/24/pictures/4" for ::1 at 2019-03-28 16:48:08 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"24", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 1244ms (ActiveRecord: 0.9ms)
+
+
+  
+CloudinaryException (Server returned unexpected status code - 420 - {"error":{"message":"Rate Limit Exceeded. Limit of 50 Imagga Auto Tagging operations reached. Try again on Thu, 25 Apr 2019 00:00:00 GMT"}}):
+  
+app/controllers/pictures_controller.rb:13:in `show'
+Started GET "/users/24/pictures/4" for ::1 at 2019-03-28 16:49:35 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"24", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 929ms (ActiveRecord: 0.3ms)
+
+
+  
+CloudinaryException (Server returned unexpected status code - 420 - {"error":{"message":"Rate Limit Exceeded. Limit of 50 Imagga Auto Tagging operations reached. Try again on Thu, 25 Apr 2019 00:00:00 GMT"}}):
+  
+app/controllers/pictures_controller.rb:13:in `show'
+Started GET "/users/24/pictures/4" for ::1 at 2019-03-28 16:50:16 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"24", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 630ms (ActiveRecord: 1.8ms)
+
+
+  
+CloudinaryException (Resource not found - http://res.cloudinary.com/dchr7rxek/image/upload/v1553544642/kxqhrkynemyznjnwbcn8.jpg):
+  
+app/controllers/pictures_controller.rb:13:in `show'
+Started GET "/users" for ::1 at 2019-03-28 16:50:21 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 251ms (Views: 248.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/23" for ::1 at 2019-03-28 16:50:23 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 23]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (14.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 59ms (Views: 45.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-03-28 16:50:39 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/42/pictures" for ::1 at 2019-03-28 16:50:40 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"42"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (22.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 63.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/42/pictures/new" for ::1 at 2019-03-28 16:50:42 +0000
+Processing by PicturesController#new as HTML
+  Parameters: {"user_id"=>"42"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/new.html.erb within layouts/application
+  Rendered pictures/new.html.erb within layouts/application (22.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 52ms (Views: 45.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/22/pictures" for ::1 at 2019-03-28 16:50:56 +0000
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6RfD7XFwyLd9E0a6p8G3ys+BpK5TVffedP7sOOx31qLMER+R+pXYIyAlKaXbkf/Ln0vB99KNAuxpMzoso51pwQ==", "picture"=>{"name"=>"louie test", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x007ffc672435b8 @tempfile=#<Tempfile:/var/folders/_8/800bcsx94wz3hwsyxbh0jxph0000gn/T/RackMultipart20190328-35884-1ecgu23.png>, @original_filename="4o3Qtrv.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"picture[attachment]\"; filename=\"4o3Qtrv.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Upload Image", "user_id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pictures" ("name", "attachment", "user_id") VALUES (?, ?, ?)[0m  [["name", "louie test"], ["attachment", "v69i3ghqla57g49jhwty.png"], ["user_id", 42]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "pictures" SET "attachment" = 'image/upload/v1553791857/v69i3ghqla57g49jhwty.png' WHERE "pictures"."id" = ?[0m  [["id", 31]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/42/pictures/31
+Completed 302 Found in 1179ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/users/42/pictures/31" for ::1 at 2019-03-28 16:50:58 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"42", "id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 705ms (ActiveRecord: 0.4ms)
+
+
+  
+CloudinaryException (Server returned unexpected status code - 420 - {"error":{"message":"You don't have an active subscription for Imagga Auto Tagging"}}):
+  
+app/controllers/pictures_controller.rb:13:in `show'
+Started GET "/users/22/pictures/12" for ::1 at 2019-03-28 16:53:51 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"12"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 457ms (ActiveRecord: 0.3ms)
+
+
+  
+CloudinaryException (Resource not found - http://res.cloudinary.com/dchr7rxek/image/upload/v1553605879/ynmxtnngh6b2yvj7zk7m.jpg):
+  
+app/controllers/pictures_controller.rb:13:in `show'
+Started GET "/users/22/pictures" for ::1 at 2019-03-28 16:53:55 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (11.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 41.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/22/pictures/9" for ::1 at 2019-03-28 16:53:56 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 446ms (ActiveRecord: 0.2ms)
+
+
+  
+CloudinaryException (Resource not found - http://res.cloudinary.com/dchr7rxek/image/upload/v1553560010/uicuo4yjien0darphybf.jpg):
+  
+app/controllers/pictures_controller.rb:13:in `show'
+Started GET "/users/22/pictures" for ::1 at 2019-03-28 16:53:57 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (13.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 36.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/22/pictures/31" for ::1 at 2019-03-28 16:54:03 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 807ms (ActiveRecord: 0.3ms)
+
+
+  
+CloudinaryException (Server returned unexpected status code - 420 - {"error":{"message":"You don't have an active subscription for Imagga Auto Tagging"}}):
+  
+app/controllers/pictures_controller.rb:13:in `show'
+Started GET "/users/22/pictures/31" for ::1 at 2019-03-28 16:54:39 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 662ms (ActiveRecord: 1.8ms)
+
+
+  
+CloudinaryException (Server returned unexpected status code - 420 - {"error":{"message":"You don't have an active subscription for Imagga Auto Tagging"}}):
+  
+app/controllers/pictures_controller.rb:13:in `show'
+Started GET "/users/" for ::1 at 2019-03-28 16:54:47 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/43" for ::1 at 2019-03-28 16:54:48 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 43]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/42/pictures" for ::1 at 2019-03-28 16:54:50 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"42"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (13.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 39.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/22/pictures/31" for ::1 at 2019-03-28 16:54:53 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 665ms (ActiveRecord: 0.4ms)
+
+
+  
+CloudinaryException (Server returned unexpected status code - 420 - {"error":{"message":"You don't have an active subscription for Imagga Auto Tagging"}}):
+  
+app/controllers/pictures_controller.rb:13:in `show'
+Started GET "/users/22/pictures/31" for ::1 at 2019-03-28 17:00:33 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 31]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (30.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+Completed 200 OK in 2444ms (Views: 288.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/logout" for ::1 at 2019-03-28 17:00:50 +0000
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-03-28 17:00:50 +0000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-03-28 17:00:53 +0000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-03-28 17:01:29 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tTB6eICgPKnT76FFG9lRn2LZ+jKMf5g6j8xuejB+xemBs48t4VkKvg8iUC84l3xjCaD3XyNRa3PgvBQkK4P2+w==", "user"=>{"name"=>"Louie O'Grady", "email"=>"louie@louie.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "louie@louie.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 84ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/signup" for ::1 at 2019-03-28 17:01:29 +0000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-03-28 17:01:41 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xhyg2gYqZvS1yG1VjRbXalLuBFa4DB2t80ViSkN9l47H1m16WyHpbzj6ljsl2jFXLSZV3SpQv9rXFFsZN81yuw==", "user"=>{"name"=>"will smith", "email"=>"louie@louie.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "louie@louie.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 68ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/signup" for ::1 at 2019-03-28 17:01:41 +0000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-03-28 17:02:01 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c4NzPaKDpT4nG4NwOeaqDf5A2f7+d2Vcc0yHZ1WDit1ySb6d/4gqpaopeB6RKkwwgYiIdWwrxytXHb40ITNv6A==", "user"=>{"name"=>"idiot", "email"=>"idiot@idiot.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "idiot@idiot.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "idiot@idiot.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "email") VALUES (?, ?, ?)[0m  [["name", "idiot"], ["password_digest", "$2a$10$4tylmVMzYGvtTJSS1G7XCuFmthfkJq8HHQssO6WMBTPxdn5gwuIHC"], ["email", "idiot@idiot.com"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/44
+Completed 302 Found in 71ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/users/44" for ::1 at 2019-03-28 17:02:01 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 44]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 30.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-03-28 17:04:34 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (8.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 36.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/44" for ::1 at 2019-03-28 17:04:35 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 44]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (4.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 31.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/44/pictures" for ::1 at 2019-03-28 17:04:36 +0000
+  
+SyntaxError (/Users/l/Development/mod2projectv6-salsvers/QueEsEso/app/controllers/pictures_controller.rb:16: syntax error, unexpected tSYMBEG, expecting ')'
+       :detection => "aws_rek_face",
+        ^
+/Users/l/Development/mod2projectv6-salsvers/QueEsEso/app/controllers/pictures_controller.rb:16: syntax error, unexpected ',', expecting keyword_end):
+  
+app/controllers/pictures_controller.rb:16: syntax error, unexpected tSYMBEG, expecting ')'
+app/controllers/pictures_controller.rb:16: syntax error, unexpected ',', expecting keyword_end
+Started GET "/users/44/pictures" for ::1 at 2019-03-28 17:04:44 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"44"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (15.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 57ms (Views: 39.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/22/pictures/31" for ::1 at 2019-03-28 17:04:48 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 31]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (6.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 2319ms (Views: 30.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/44/pictures/new" for ::1 at 2019-03-28 17:05:03 +0000
+Processing by PicturesController#new as HTML
+  Parameters: {"user_id"=>"44"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/new.html.erb within layouts/application
+  Rendered pictures/new.html.erb within layouts/application (5.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 39.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/22/pictures" for ::1 at 2019-03-28 17:06:37 +0000
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cd8ae+sJccltLbEXhdHMaxiuHp6p68Dawp9TPOwYr2lU2cYHYOxhXTAb3gj5gYRqSGR7xygzNejfUoUoo/IQCg==", "picture"=>{"name"=>"test", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x007fa50f0cd080 @tempfile=#<Tempfile:/var/folders/_8/800bcsx94wz3hwsyxbh0jxph0000gn/T/RackMultipart20190328-36033-1kt6luw.jpg>, @original_filename="George_Clooney-4_The_Men_Who_Stare_at_Goats_TIFF09_(cropped).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[attachment]\"; filename=\"George_Clooney-4_The_Men_Who_Stare_at_Goats_TIFF09_(cropped).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload Image", "user_id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pictures" ("name", "attachment", "user_id") VALUES (?, ?, ?)[0m  [["name", "test"], ["attachment", "ft9zhdljph7mownhxp2d.jpg"], ["user_id", 44]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "pictures" SET "attachment" = 'image/upload/v1553792797/ft9zhdljph7mownhxp2d.jpg' WHERE "pictures"."id" = ?[0m  [["id", 32]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/44/pictures/32
+Completed 302 Found in 1213ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/users/44/pictures/32" for ::1 at 2019-03-28 17:06:38 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"44", "id"=>"32"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 32]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (4.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 3109ms (Views: 29.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/44/pictures" for ::1 at 2019-03-28 17:06:50 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"44"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (16.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/22/pictures/31" for ::1 at 2019-03-28 17:06:54 +0000
+Processing by PicturesController#show as HTML
+  Parameters: {"user_id"=>"22", "id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering pictures/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."picture_id" = ?[0m  [["picture_id", 31]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered pictures/show.html.erb within layouts/application (4.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 2632ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/22/pictures/31/edit" for ::1 at 2019-03-28 17:06:58 +0000
+Processing by PicturesController#edit as HTML
+  Parameters: {"user_id"=>"22", "id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering pictures/edit.html.erb within layouts/application
+  Rendered pictures/edit.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/22/pictures/31" for ::1 at 2019-03-28 17:07:00 +0000
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rVUp4d5GOSbT6VA8tnyzZNbH/2mjB984+/VqnNYCpoMC0Vtorv1udyLTKKHnut+0UQZvQJIuwT4q4cLCadrLVQ==", "user_id"=>"22", "id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mPicture Load (0.1ms)[0m  [1m[34mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "pictures" WHERE "pictures"."id" = ?[0m  [["id", 31]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/22/pictures
+Completed 302 Found in 701ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/users/22/pictures" for ::1 at 2019-03-28 17:07:00 +0000
+Processing by PicturesController#index as HTML
+  Parameters: {"user_id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering pictures/index.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (11.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-03-28 17:07:50 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/44" for ::1 at 2019-03-28 17:07:52 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."user_id" = ?[0m  [["user_id", 44]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (4.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.5ms)
+
+

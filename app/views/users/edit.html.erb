@@ -1,6 +1,6 @@
 <h1> Edit User </h1>
 
-<%= form_for (user_path) do |f| %>
+<%= form_for @user do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
 <br>
@@ -11,5 +11,5 @@
   <%= f.password_field :password %>
 <br>
   <%= f.submit "Save Edit"%>
-<% end  %>
+<% end %>
 <br>
