@@ -3,12 +3,17 @@
 <p> Picture Name : <%= @picture.name %> </p>
 <p> User : <%= "#{current_user.name}" %> </p>
 <p> Picture : <br> <%= image_tag "#{@picture.attachment}", size: "500" %> </p>
-
 <h3> Recognition : <%= @tags %> </h3>
 
 <h2>Comments: <% @picture.comments.each do |c| %></h2>
 <ul>
-  <li><%= c.content %> <%= link_to 'Edit or Delete Comment', edit_comment_path(c) %></li>
+  <%= @user.name %>
+  <br>
+  <li><%= c.content %> 
+    <br>
+    <%= c.created_at.strftime("%d-%m-%Y") %>
+    <br>
+    <%= link_to 'Edit or Delete Comment', edit_comment_path(c) %></li>
 </ul>
 <% end %>
 
@@ -16,13 +21,12 @@
 
 <p> <%= form_for (@comment) do |f| %> </p>
 
-<%= f.label :content%>
-<p> <%= f.text_field :content %> </p>
-<br>
-<%= f.submit "Submit Comment" %>
+  <%= f.label :content%>
+  <p> <%= f.text_field :content %> </p>
+  <%= f.hidden_field :picture_id, value: @picture.id %>
+  <br>
+  <%= f.submit "Submit Comment" %>
 <% end %>
-
-<h2><%= link_to 'Make a Comment', new_comment_path %></h2>
 
 <p> <%= link_to 'Edit or Delete Picture', edit_user_picture_path %> </p>
 <p> <%= link_to "Picture Index", user_pictures_path %> </p>

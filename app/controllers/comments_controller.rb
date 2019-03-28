@@ -8,28 +8,31 @@ class CommentsController < ApplicationController
     @usercomments = User.first.pictures.all.map {|x| x.comments.all.map {|y| y.content}}
   end
 
-
   def new
     @comment = Comment.new
   end
 
   def edit
     @comment = Comment.find(params[:id])
+    @picture = Picture.find(params[:id])
   end
 
   def create
     session[:return_to] = request.referer
     @comment = Comment.new
-    @comment.picture = Picture.first
+    #byebug
+    #@comment.picture = Picture.first
     @comment.update(comment_params)
     redirect_to session[:return_to]
   end
 
   def update
     @comment = Comment.new
-    @comment.picture = Picture.first
+    #@comment.picture = Picture.first
     @comment.update(comment_params)
-    redirect_to pictures_path
+    #byebug
+    redirect_to user_picture_path(@comment.picture_id)
+    #redirect_to user_picture_path(@comment.picture.user_id)
   end
 
   def destroy
