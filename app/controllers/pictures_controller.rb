@@ -9,7 +9,7 @@ class PicturesController < ApplicationController
   def show
     @comment = Comment.new
     @picture = Picture.find(params[:id])
-    @user = @picture.user
+    #@user = @picture.user
     # @response = Cloudinary::Uploader.upload("#{@picture.attachment}",
     #   :categorization => "imagga_tagging",
     #   :auto_tagging => 0.3)

@@ -7,9 +7,9 @@
 
 <h2>Comments: <% @picture.comments.each do |c| %></h2>
 <ul>
-  <%= @user.name %>
+  <%= User.find(c.user_id).name %>
   <br>
-  <li><%= c.content %> 
+  <li><%= c.content %>
     <br>
     <%= c.created_at.strftime("%d-%m-%Y") %>
     <br>
@@ -24,6 +24,7 @@
   <%= f.label :content%>
   <p> <%= f.text_field :content %> </p>
   <%= f.hidden_field :picture_id, value: @picture.id %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
   <br>
   <%= f.submit "Submit Comment" %>
 <% end %>
