@@ -8,13 +8,14 @@ class PicturesController < ApplicationController
 
   def show
     @comment = Comment.new
-
     @picture = Picture.find(params[:id])
-
-    # @response = Cloudinary::Uploader.upload("#{@picture.attachment}",
-    #   :categorization => "imagga_tagging",
-    #   :auto_tagging => 0.3)
-    # @tags = @response["tags"]
+    #@user = @picture.user
+     @response = Cloudinary::Uploader.upload("#{@picture.attachment}",
+       :categorization => "google_tagging",
+       :auto_tagging => 0.75,
+       :detection => "aws_rek_face",
+       :auto_tagging => 0.8)
+     @tags = @response["tags"]
   end
 
   def new
@@ -29,7 +30,7 @@ class PicturesController < ApplicationController
   def update
     @picture = Picture.new
     @picture.update(picture_params)
-    redirect_to user_picture_path(@userpicture)
+    redirect_to user_picture_path(@userpicture) # NEEDS TO CHANGE?? - no @userpicture = poss change to @picture.user
   end
 
   def create

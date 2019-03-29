@@ -13,6 +13,10 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
   def create
     @user = User.new(user_params)
       if @user.valid?
@@ -23,6 +27,12 @@ class UsersController < ApplicationController
         flash[:errors] = ['something went wrong, try again']
         redirect_to signup_path
       end
+  end
+
+  def update
+    @user = User.find_by_id(params[:id])
+    @user.update(user_params)
+    redirect_to user_path(@user)
   end
 
 private
