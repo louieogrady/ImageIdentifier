@@ -1,11 +1,9 @@
 <h1> Pictures Index </h1>
 
+<!-- Photo grid -->
+
 <% @pictures.each do |picture| %>
-<p> <%= link_to picture.name, user_picture_path(@user, picture) %> </p>
-<p> <%= image_tag "#{picture.attachment}" %> </p>
-<p> <%#= image_tag "#{picture.attachment}", :type => :upload, :width => 400, :height => 450, :crop => :fill %> </p>
-
-
+<%= link_to image_tag("#{picture.attachment}"), user_picture_path(@user, picture) %>
 <% end %>
 <br>
 <p> <%= link_to "Upload New Picture", new_user_picture_path %> </p>
