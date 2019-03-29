@@ -1,0 +1,9 @@
+.imagescontainer {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.child {
+  width: 40%;
+}
