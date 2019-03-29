@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   def authorized?
     if !logged_in?
       flash[:errors] = ["you are not logged in"]
-      redirect_to login_path and return  # double redirect safeguard
+      redirect_to login_path and return  
     end
   end
 

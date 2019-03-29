@@ -9,14 +9,14 @@ class PicturesController < ApplicationController
   def show
     @comment = Comment.new
     @picture = Picture.find(params[:id])
-     @response = Cloudinary::Uploader.upload("#{@picture.attachment}",
-       :categorization => "aws_rek_tagging",
-       :auto_tagging => 0.75)
-     @tags = @response["tags"]
+     # @response = Cloudinary::Uploader.upload("#{@picture.attachment}",
+     #   :categorization => "google_tagging",
+     #   :auto_tagging => 0.75)
+     # @tags = @response["tags"]
 
      # @facialresponse = Cloudinary::Uploader.upload("#{Picture.last.attachment}", :detection => "adv_face")["info"]["detection"]["adv_face"]["data"].first["attributes"]["emotion"]["anger"]
      #  @facialhash = @facialresponse["info"]["detection"]["adv_face"]["data"].first["attributes"]
-     #  @facialhash["age"] = @age
+     #  @facialhash["age"] = @age.to.i
      #  @facialhash["emotion"] = @emotions
      #  @emotions["anger"] = @anger
      #  @emotions["contempt"] = @contempt
@@ -35,16 +35,14 @@ class PicturesController < ApplicationController
   end
 
   def edit
-    # byebug
     @picture = Picture.find_by_id(params[:id])
   end
 
   def update
-    # byebug
     @picture = Picture.find_by_id(params[:id])
     @picture.update(edit_picture_params)
 
-    redirect_to user_picture_path(@picture) # NEEDS TO CHANGE?? - no @userpicture = poss change to @picture.user
+    redirect_to user_picture_path(@picture) 
   end
 
   def create

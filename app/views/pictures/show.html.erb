@@ -5,40 +5,8 @@
 <p> Picture : <br> <%= image_tag "#{@picture.attachment}", size: "500" %> </p>
 <h3> Recognition : <%= @tags %> </h3>
 <br>
-<h3> Age : <%= @age %> </h3>
-<h3> Anger : <%= @anger %> % </h3>
-<h3> Contempt : <%= @contempt %> % </h3>
-<h3> Disgust : <%= @digust %> % </h3>
-<h3> Fear : <%= @fear %> % </h3>
-<h3> Happiness : <%= @hapiness %> % </h3>
-<h3> Neutral : <%= @neutral %> % </h3>
-<h3> Sadness : <%= @sadness %> % </h3>
-<h3> Surpise : <%= @surprise %> % </h3>
 <br>
-<h2>Comments: <% @picture.comments.each do |c| %></h2>
-<ul>
-  <%= User.find(c.user_id).name %>
-  <br>
-  <li><%= c.content %>
-    <br>
-    <%= c.created_at.strftime("%d-%m-%Y") %>
-    <br>
-    <%= link_to 'Edit or Delete Comment', edit_comment_path(c) %></li>
-</ul>
-<% end %>
-<br>
-<br>
-<h2> Add A New Comment: </h2>
 
-<p> <%= form_for (@comment) do |f| %> </p>
-
-  <%= f.label :content%>
-  <p> <%= f.text_field :content %> </p>
-  <%= f.hidden_field :picture_id, value: @picture.id %>
-  <%= f.hidden_field :user_id, value: current_user.id %>
-  <%= f.submit "Submit Comment" %>
-<% end %>
-<br>
 <% if @picture.user_id == current_user.id %>
 <%= link_to 'Edit or Delete Picture', edit_user_picture_path %> <br>
 <% end %>

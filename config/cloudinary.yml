@@ -1,39 +1,19 @@
 ---
-  development:
-    cloud_name: dchr7rxek
-    api_key: '574552485424812'
-    api_secret: TgQZacyUaVU_DR-s0hI6ywLHAzQ
-    enhance_image_tag: true
-    static_file_support: false
-  production:
-    cloud_name: dchr7rxek
-    api_key: '574552485424812'
-    api_secret: TgQZacyUaVU_DR-s0hI6ywLHAzQ
-    enhance_image_tag: true
-    static_file_support: true
-  test:
-    cloud_name: dchr7rxek
-    api_key: '574552485424812'
-    api_secret: TgQZacyUaVU_DR-s0hI6ywLHAzQ
-    enhance_image_tag: true
-    static_file_support: false
-
-
-# development:
-#   cloud_name: saqemlas
-#   api_key: '776919772749463'
-#   api_secret: Yb5fsV7QqFrLSXWaENH7EUK-jVQ
-#   enhance_image_tag: true
-#   static_file_support: false
-# production:
-#   cloud_name: saqemlas
-#   api_key: '776919772749463'
-#   api_secret: Yb5fsV7QqFrLSXWaENH7EUK-jVQ
-#   enhance_image_tag: true
-#   static_file_support: true
-# test:
-#   cloud_name: saqemlas
-#   api_key: '776919772749463'
-#   api_secret: Yb5fsV7QqFrLSXWaENH7EUK-jVQ
-#   enhance_image_tag: true
-#   static_file_support: false
+development:
+  cloud_name: saqemlas
+  api_key: '776919772749463'
+  api_secret: Yb5fsV7QqFrLSXWaENH7EUK-jVQ
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: saqemlas
+  api_key: '776919772749463'
+  api_secret: Yb5fsV7QqFrLSXWaENH7EUK-jVQ
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: saqemlas
+  api_key: '776919772749463'
+  api_secret: Yb5fsV7QqFrLSXWaENH7EUK-jVQ
+  enhance_image_tag: true
+  static_file_support: false
