@@ -19,19 +19,14 @@ class CommentsController < ApplicationController
   def create
     session[:return_to] = request.referer
     @comment = Comment.new
-    #byebug
-    #@comment.picture = Picture.first
     @comment.update(comment_params)
     redirect_to session[:return_to]
   end
 
   def update
     @comment = Comment.find(params[:id])
-    #@comment.picture = Picture.first
     @comment.update({:content => comment_params[:content]})
-    #byebug
     redirect_to user_picture_path(@comment.picture.user_id, @comment.picture.id)
-    #redirect_to user_picture_path(@comment.picture.user_id)
   end
 
   def destroy
