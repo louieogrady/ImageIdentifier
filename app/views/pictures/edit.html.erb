@@ -1,15 +1,17 @@
+
 <h1> Edit or Delete Picture </h1>
 
-<%= form_for (user_picture_path) do |f| %>
+<%= form_tag user_picture_path(@picture), method: :patch do %>
+<br>
 
-<%= f.label :name %>
-<%= f.text_field :name %> <br>
-
-<%= f.label :attachment %>
-<%= f.file_field :attachment %> <br>
-
-<%= f.submit "Save Edit"%>
+<%= label_tag :name %>
+<%= text_field_tag :name %> <br>
+<br>
+<%= label_tag :attachment %>
+<%= file_field_tag :attachment %> <br>
+<br>
+<%= submit_tag "Save Edit"%>
 <% end %>
-
+<br>
 <%= button_to "Delete Picture", {:controller => :pictures,
       :action => 'destroy', :id => @picture.id }, :method => :delete %>
