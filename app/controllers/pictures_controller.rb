@@ -9,12 +9,10 @@ class PicturesController < ApplicationController
   def show
     @comment = Comment.new
     @picture = Picture.find(params[:id])
-    #@user = @picture.user
      @response = Cloudinary::Uploader.upload("#{@picture.attachment}",
        :categorization => "google_tagging",
        :auto_tagging => 0.75,
-       :detection => "aws_rek_face",
-       :auto_tagging => 0.8)
+       :detection => "aws_rek_face")
      @tags = @response["tags"]
   end
 
