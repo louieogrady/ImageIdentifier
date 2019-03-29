@@ -17,5 +17,3 @@
 /= require popper
 /= require bootstrap-sprockets
 /= require bootstrap
-
-<script src="bootstrap/js/bootstrap.min.js"></script>
