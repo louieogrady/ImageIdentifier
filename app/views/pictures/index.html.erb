@@ -1,12 +1,13 @@
 <h1> Pictures Index </h1>
 
-<% @pictures.each do |picture| %>
-<p> <%= link_to picture.name, user_picture_path(@user, picture) %> </p>
-<p> <%= image_tag "#{picture.attachment}" %> </p>
-<p> <%#= image_tag "#{picture.attachment}", :type => :upload, :width => 400, :height => 450, :crop => :fill %> </p>
+<div class="imagescontainer">
+  <% @pictures.each do |picture| %>
+  <div>
+    <p> <%= link_to image_tag("#{picture.attachment}", height: 300 ), user_picture_path(@user, picture) %> </p>
+  </div>
+  <% end %>
+</div>
 
-
-<% end %>
 <br>
 <p> <%= link_to "Upload New Picture", new_user_picture_path %> </p>
 <br>
