@@ -5,6 +5,16 @@
 <p> Picture : <br> <%= image_tag "#{@picture.attachment}", size: "500" %> </p>
 <h3> Recognition : <%= @tags %> </h3>
 <br>
+<h3> Age : <%= @age %> </h3>
+<h3> Anger : <%= @anger*100 %> % </h3>
+<h3> Contempt : <%= @contempt*100 %> % </h3>
+<h3> Disgust : <%= @digust*100 %> % </h3>
+<h3> Fear : <%= @fear*100 %> % </h3>
+<h3> Happiness : <%= @hapiness*100 %> % </h3>
+<h3> Neutral : <%= @neutral*100 %> % </h3>
+<h3> Sadness : <%= @sadness*100 %> % </h3>
+<h3> Surpise : <%= @surprise*100 %> % </h3>
+<br>
 <h2>Comments: <% @picture.comments.each do |c| %></h2>
 <ul>
   <%= User.find(c.user_id).name %>

@@ -9,15 +9,28 @@ class PicturesController < ApplicationController
   def show
     @comment = Comment.new
     @picture = Picture.find(params[:id])
-     @response = Cloudinary::Uploader.upload("#{@picture.attachment}",
-       :categorization => "google_tagging",
-       :auto_tagging => 0.75,
-       :detection => "aws_rek_face")
-     @tags = @response["tags"]
+     # @response = Cloudinary::Uploader.upload("#{@picture.attachment}",
+     #   :categorization => "aws_rek_tagging",
+     #   :auto_tagging => 0.75)
+     # @tags = @response["tags"]
+
+     # @facialresponse = Cloudinary::Uploader.upload("#{Picture.last.attachment}", :detection => "adv_face")["info"]["detection"]["adv_face"]["data"].first["attributes"]["emotion"]["anger"]
+     #  @facialhash = @facialresponse["info"]["detection"]["adv_face"]["data"].first["attributes"]
+     #  @facialhash["age"] = @age
+     #  @facialhash["emotion"] = @emotions
+     #  @emotions["anger"] = @anger
+     #  @emotions["contempt"] = @contempt
+     #  @emotions["disgust"] = @disgust
+     #  @emotions["fear"] = @fear
+     #  @emotions["happiness"] = @happiness
+     #  @emotions["neutral"] = @neutral
+     #  @emotions["sadness"] = @sadness
+     #  @emotions["surprise"] = @surprise
+
   end
 
   def new
-    @user = User.find_by_id(params[:user_id]) # had to specify user_id specifically here, error when given params[:id])
+    @user = User.find_by_id(params[:user_id])
     @picture = Picture.new
   end
 
