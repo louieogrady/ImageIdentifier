@@ -1,5 +1,6 @@
 <h1> Show Picture </h1>
 
+
 <p> Picture Name : <%= @picture.name %> </p>
 <p> Uploaded by : <%= "#{current_user.name}" %> </p>
 <p> Picture : <br> <%= image_tag "#{@picture.attachment}", size: "500" %> </p>
