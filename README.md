@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- - - - - Que Es Eso - - - - -
 
-Things you may want to cover:
+An application for people with visual impairment to upload photos that have no alt tags in their images.
 
-* Ruby version
+Users are able to sign in, see photos they have uploaded on their user page, see a photos index to see all
+images uploaded onto the app, and all the images a particular user has uploaded.
 
-* System dependencies
+With each image upload, an image is uploaded using cloud storage, but to also generate highly accurate
+tags of what's in the image, if the image has a celebrity - it will recognise them.
 
-* Configuration
+* Ruby on Rails - version 5.1.6
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Cloudinary Cloud Storage
