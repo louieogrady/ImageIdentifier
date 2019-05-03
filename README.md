@@ -11,4 +11,8 @@ With each image upload, an image is uploaded using cloud storage, but to also pa
 
 * Ruby on Rails - version 5.1.6
 
-* Cloudinary Cloud Storage
+* Cloudinary Cloud Storage for the images
+
+* SQLite3 database storage for user information
+
+* Google Cloud Machine Learning Auto-Tagging Model
