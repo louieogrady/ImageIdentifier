@@ -1,4 +1,4 @@
-<h1> Pictures Index </h1>
+<h1> All Pictures </h1>
 
 <div class="imagescontainer">
   <% @pictures.each do |picture| %>
@@ -11,4 +11,4 @@
 <br>
 <p> <%= link_to "Upload New Picture", new_user_picture_path %> </p>
 <br>
-<p> <%= link_to "User Index", users_path %> </p>
+<p> <%= link_to 'User Show Page', @user %> </p>

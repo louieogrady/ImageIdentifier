@@ -1,4 +1,4 @@
-<h1> Show Picture </h1>
+<h1> Picture Page </h1>
 
 <p> Picture Name : <%= @picture.name %> </p>
 <p> Uploaded by : <%= "#{current_user.name}" %> </p>
@@ -11,5 +11,3 @@
 <%= link_to 'Edit or Delete Picture', edit_user_picture_path %> <br>
 <% end %>
 <span style="border:15px"> <%= link_to "Picture Index", user_pictures_path %> <br>
-
-<span style="border:15px "> <%= link_to "User Index", users_path %> <br>

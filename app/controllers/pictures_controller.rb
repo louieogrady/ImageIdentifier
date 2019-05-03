@@ -13,7 +13,7 @@ class PicturesController < ApplicationController
        :categorization => "google_tagging",
        :detection => "aws_rek_face",
        :auto_tagging => 0.75)
-     @tags = @response["tags"]
+     @tags = @response["tags"].join(', ')
   end
 
   def new

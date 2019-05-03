@@ -1,8 +1,0 @@
-<h1> User Index </h1>
-
-<p> <% @users.each do |user| %> </p>
-<p> <%= link_to user.name, user_path(user) %> </p>
-    <% end %>
-
-
-<p> <%= link_to "Picture Index", user_pictures_path(current_user) %> </p>
