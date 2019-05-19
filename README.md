@@ -16,3 +16,5 @@ With each image upload, an image is uploaded using cloud storage, but to also pa
 * SQLite3 database storage for user information
 
 * Google Cloud Machine Learning Auto-Tagging Model
+
+![Alt Text](https://media.giphy.com/media/gJox2SVHaSkMSFepN7/giphy.gif)
