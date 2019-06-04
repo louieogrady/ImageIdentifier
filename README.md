@@ -1,5 +1,3 @@
-> README
-
 # Image Identifier
 
 An application for people with visual impairment to upload photos that have no alt tags in their images.
