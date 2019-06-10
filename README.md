@@ -15,3 +15,6 @@ With each image upload, an image is uploaded using cloud storage, but to also pa
 
 * Google Cloud Machine Learning Auto-Tagging Model
 
+
+
+![](ezgif-3-a6b0159d7974.gif)
